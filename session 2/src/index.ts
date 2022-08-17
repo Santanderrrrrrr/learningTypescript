@@ -32,20 +32,7 @@ const personTwo: {
 
 }
 
-// const timeline: number = 5
-// function convertPlnToUsd(pln: number): number{
-//     return pln/4
-// }
-// const lifeGoal: number = 600000000
-// const currency: string = "dollars"
-// console.log(`life goal is ${currency}: ${lifeGoal}`)
-// const secondaryCurrency: string = "pln"
-// const plannedIncomeTenYrs: number = 38300 
-// console.log(`planned income per month in ${timeline} years is ${secondaryCurrency}: ${plannedIncomeTenYrs}`)
 
-// const pity = convertPlnToUsd(plannedIncomeTenYrs)
-// console.log(`planned income per month in dollars in ${timeline} years is ${pity}`)
-// console.log(`which translates to an annual ${pity*12}`)
 
 // the following is a demonstration of the type literal:
 function combine(
