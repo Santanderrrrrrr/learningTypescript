@@ -1,0 +1,76 @@
+>>Typescript is an open source language created by Microsoft in 2013 
+>>TypeScript is the JavaScript superset
+>>Adds additional features to JS including static types although
+> using types is optional.( main use is adding static types)
+>>Types from 3rd party libraries can be added with type definitions
+>>can be used for front-end js and backend with Node.Js
+>>Compiles down to regular js
+
+>>Statically typed languages are those where the variable type is
+  explicitly assigned while the Dynamically typed languages have their types
+  associated with run-time values
+  Static: 1. Java
+          2. C
+          3. C++
+          4. Rust
+          5. Go
+  Dynamic: 1. JavaScript
+           2. Python
+           3. Ruby
+           4. PHP
+
+>>Pros to using TS:
+    More robust
+    Easily spot bugs
+    Predictability
+    Readability
+    Popular
+>>Cons:
+    More code to write
+    More to learn
+    Require compilation
+    iffy static typing
+
+>>The tsc is the standard typescript compiler
+>>Many IDEs have the typescript  by default
+>>the "tsconfig.json" file is used to configure how TypeScript works
+
+>>installing typescript globally is a simply matter of just
+  doing it using npm 
+
+>>setting a config file is a matter of hitting
+/*      tsc --init     */
+
+  in the terminal in the directory you're going to be working in
+
+>>Usually, after creating the tsconfig file, the following settings are made:
+    -the target
+    -allowJs
+    -checkJs
+    -module
+    -sourceMap
+    -outDir
+    -rootDir
+
+
+>>When running typescript, you'll have a src folder with some typescript and a 
+  dist folder which holds your compiled javascript
+
+>>Usually, setting the outDir to dist lets the compiled javascript be saved in the folder called
+  Dist
+
+>> the rootDir usually where the src is
+
+
+
+
+//compiling ts to js is done by running "tsc and 
+  the file name" in the terminal
+//This is to be done in the file directory.
+//Compiling the ts file will result in a js file of the same name
+  only with the transcript "translated" to js
+//TS compiles to es5 by default so let becomes var
+  but as earlier mentioned, this happens only if you haven't edited the tsconfig file
+//You can run the ts file on watch in order to concurrently 
+  check for errors and update the js file in real time by running(in this instance):
+/*      tsc --watch index.ts         */

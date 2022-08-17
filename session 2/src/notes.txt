@@ -1,0 +1,31 @@
+"exclude" is a field you could add to the tsconfig file to specify which files you would like to exclude during compilation
+    you simply specify the route to the files and upon compilation, the files will not be converted to js files upon compilation.
+    the exclude field takes an array of files to be removed
+    >It's common to exclude node_modules in order to keep compilation from being slow
+        Node_modules are automatically excluded from compilation.
+
+"include" is a field you could add to the tsconfig file to specify which files should be included during compilation
+    It's better not to have an include field cause then you'd have to incude all the files needed.
+
+"files" is a little like include and is better for smaller projects
+in the "lib" option of the tsconfig file, it's common to add the following:
+    1. dom
+    2. es6
+    3. dom.iterable
+    4. scripthost
+        These tend to be what allows typescript to relate to what you're talking about when you mention the 
+        dom and other native javascript attributes.
+        If you de-comment the field "lib", you need to fill in the fields or else typescript will not understand you
+        If you do not intend to fill in the fields, then do not de-comment
+
+The "sourcemap" facilitates debugging by providing a bridge to the typescript files in the browser.
+The "noEmit" commented field of the default tsconfig allows you to choose whether you would simpl like the 
+    typescript compiler to just check your files for errors but not emit to a js file.  
+"downLevelIteration" makes it such that when you have plenty of loops in your typescript file and upon compilation, the behavior is different,
+    you get to have it behave right. 
+    The downside is that you get more verbose code.
+"noEmitOnError" makes it such that you do not get compiled js files when there's an error in the tsc file.
+"strict" does exactly what you think it does. 
+    It enforces typescript type checking to the T.
+
+
